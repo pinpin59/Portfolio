@@ -118,3 +118,19 @@
     @apply bg-background text-foreground;
   }
 }
+
+.square-bg {
+  background-image: url("/src/assets/square.svg");
+  background-repeat: repeat;
+  background-size: 30px;
+}
+.mesh-gradient {
+  @apply absolute top-0 left-auto w-[700px] h-[70%] -z-10;
+  background-image: radial-gradient(
+    circle,
+    rgba(55, 0, 255, 0.431) 0%,
+ rgba(128, 0, 128, 0.355) 50%,
+     rgba(0, 0, 0, 0.9) 100%
+  );
+  filter: blur(100px); /
+}

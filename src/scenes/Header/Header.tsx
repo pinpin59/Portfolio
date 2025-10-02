@@ -1,9 +1,9 @@
-import { ModeToggle } from "@/components/ModeToggle";
+import Navbar from "@/components/layout/Navbar";
 
 const Header = () => {
   return (
     <header>
-      <ModeToggle />
+      <Navbar />
     </header>
   );
 };
