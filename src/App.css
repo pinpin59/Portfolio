@@ -63,7 +63,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: oklch(50.398% 0.20133 334.664);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -97,9 +97,9 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: rgba(95, 59, 228, 0.989);
+  --primary: rgba(170, 153, 232, 0.989);
   --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
+  --secondary: oklch(100% 0.00011 271.152);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.708 0 0);
@@ -184,6 +184,7 @@
   background-repeat: repeat;
   background-size: 30px;
 }
+
 .mesh-gradient {
   @apply absolute top-0 left-auto w-[700px] h-[70%] -z-10;
   background-image: radial-gradient(
@@ -195,6 +196,29 @@
   filter: blur(100px);
 }
 
+.bg-gradient {
+  background-image: radial-gradient(
+    circle,
+    rgba(55, 0, 255, 0.431) 0%,
+    rgba(128, 0, 128, 0.355) 50%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+}
+
 .container {
   @apply max-w-sm md:max-w-md lg:max-w-4xl xl:max-w-6xl mx-auto px-4;
+}
+
+.wave-grid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/waves.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  opacity: 0.1; /* 10% opacity */
 }
