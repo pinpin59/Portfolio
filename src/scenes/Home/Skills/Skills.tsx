@@ -1,5 +1,5 @@
 import { Icon } from "@/components/generic/Icon";
-import SkillCardGrid from "@/scenes/Skills/components/SkillCardGrid";
+import SkillCardGrid from "@/scenes/Home/Skills/components/SkillCardGrid";
 import { Button } from "@/components/ui/button";
 import type { Skill } from "@/types/Skill";
 import { Layers } from "lucide-react";
