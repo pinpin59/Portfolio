@@ -1,9 +1,9 @@
 import contactme from "@/assets/contactme.svg";
-import { Button } from "../ui/button";
+import { ContactMeButton } from "./ContactMebutton";
 
 export const WorkTogether: React.FC = () => {
   return (
-    <div className="flex justify-center flex-col items-center">
+    <div className="flex justify-center flex-col items-center mt-10">
       <div>
         <img className="w-20" src={contactme} alt="" />
       </div>
@@ -11,9 +11,7 @@ export const WorkTogether: React.FC = () => {
         <h3>Let's Work Together!</h3>
         <p>Have a project in mind? Let's talk about it.</p>
       </div>
-      <Button className="mt-5" variant={"outline"} asChild>
-        <a href="mailto:kevinpintar59160@gmail.com">Contact me</a>
-      </Button>
+      <ContactMeButton className="mt-5" />
     </div>
   );
 };
