@@ -13,13 +13,13 @@ const Navbar: React.FC = () => {
       <NavigationMenuList className="gap-6">
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
-            <a href="#home">Home</a>
+            <a href="/">Home</a>
           </NavigationMenuLink>
         </NavigationMenuItem>
 
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
-            <a href="#projects">Projects</a>
+            <a href="/projects">Projects</a>
           </NavigationMenuLink>
         </NavigationMenuItem>
 

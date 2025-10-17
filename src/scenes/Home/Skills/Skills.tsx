@@ -40,6 +40,10 @@ const Skills = () => {
     },
   ];
 
+  const navigateToProjects = () => {
+    window.location.href = "/projects";
+  };
+
   return (
     <section className="p-4 sm:p-10 md:p-20 mt-20">
       <h2>Title Component</h2>
@@ -52,7 +56,9 @@ const Skills = () => {
       <div className="mt-20">
         <SkillCardGrid skills={skills} />
         <div className="mt-10 flex justify-end">
-          <Button variant={"outline"}>View my projects</Button>
+          <Button onClick={navigateToProjects} variant={"outline"}>
+            View my projects
+          </Button>
         </div>
       </div>
     </section>
