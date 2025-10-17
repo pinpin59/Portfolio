@@ -1,15 +1,19 @@
 import type { Project } from "@/types/Project";
 import React from "react";
+import { Link } from "react-router-dom";
 
 type ProjectCardProps = {
   project: Project;
 };
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
-  const { image, title, description, tools } = project;
+  const { image, title, description, tools, slug } = project;
 
   return (
-    <div className="relative group overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-xl transition-all duration-300 ease-in-out hover:scale-[1.02] bg-white dark:bg-gray-900">
+    <Link
+      to={`/projects/${slug}`}
+      className="relative group overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-xl transition-all duration-300 ease-in-out hover:scale-[1.02] bg-white dark:bg-gray-900 block"
+    >
       <img
         src={image}
         alt={title}
@@ -35,7 +39,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

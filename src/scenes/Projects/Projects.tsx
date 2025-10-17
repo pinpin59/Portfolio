@@ -1,36 +1,8 @@
 import ProjectsGrid from "./components/ProjectsGrid";
-import type { Project } from "@/types/Project";
-import react from "@/assets/react.svg";
-import waves from "@/assets/waves.svg";
-import test from "@/assets/test.jpg";
+import { getAllProjects } from "@/data/projects";
 
 const Projects = () => {
-  const projects: Project[] = [
-    {
-      image: react,
-      title: "Edulink",
-      description: "A platform for parents to connect with teachers",
-      tools: ["React Native", "Node.js", "Fastify", "PostgreSQL"],
-    },
-    {
-      image: waves,
-      title: "2",
-      description: "A portfolio website template",
-      tools: ["HTML", "SASS", "Javascript", "Gulp.js"],
-    },
-    {
-      image: test,
-      title: "3",
-      description: "A portfolio website template",
-      tools: ["HTML", "SASS", "Javascript", "Gulp.js"],
-    },
-    {
-      image: waves,
-      title: "4",
-      description: "A portfolio website template",
-      tools: ["HTML", "SASS", "Javascript", "Gulp.js"],
-    },
-  ];
+  const projects = getAllProjects();
 
   return (
     <section className="flex flex-col items-center p-2">

@@ -1,17 +1,17 @@
-import { type LucideIcon } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
-type IconProps = {
+interface IconProps {
   icon: LucideIcon;
   size?: number;
   color?: string;
   className?: string;
-};
+}
 
-export const Icon = ({
-  icon: IconComponent,
-  size = 24,
-  color = "var(--color-primary)",
-  className,
-}: IconProps) => {
-  return <IconComponent size={size} color={color} className={className} />;
-};
+export function Icon({
+  icon: LucideIcon,
+  size = 36,
+  color,
+  className = "text-foreground",
+}: IconProps) {
+  return <LucideIcon size={size} color={color} className={`${className}`} />;
+}
