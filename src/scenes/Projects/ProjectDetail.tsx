@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { getProjectBySlug } from "@/data/projects";
 import { ProjectCarousel } from "./components/ProjectCarousel";
