@@ -23,7 +23,6 @@ export const projectsData: Project[] = [
     description: "Application e-commerce complète avec panier et paiement",
     image: waves,
     images: [react, waves],
-
     tools: ["Next.js", "Node.js", "MongoDB", "Stripe"],
     fullDescription:
       "Application e-commerce full-stack permettant aux utilisateurs de parcourir des produits, les ajouter au panier et effectuer des achats sécurisés.",

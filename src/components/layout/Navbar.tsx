@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -66,23 +68,23 @@ const Navbar: React.FC = () => {
               <NavigationMenuList className="gap-8">
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
-                    <a
-                      href="/"
+                    <Link
+                      to="/"
                       className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 font-medium px-3 py-2 rounded-md hover:bg-gray-100/50 dark:hover:bg-gray-800/50"
                     >
                       Home
-                    </a>
+                    </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
-                    <a
-                      href="/projects"
-                      className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 font-medium px-3 py-2 rounded-md hover:bg-gray-100/50 dark:hover:bg-gray-800/50"
+                    <Link
+                      to="/projects"
+                      className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 font-medium"
                     >
                       Projects
-                    </a>
+                    </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
 

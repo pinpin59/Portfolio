@@ -2,7 +2,7 @@ import { ContactMeButton } from "@/components/generic/ContactMeButton";
 import { Icon } from "@/components/generic/Icon";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, View } from "lucide-react";
-
+import avatar from "@/assets/avatar3d.png";
 const Hero = () => {
   return (
     <section className="min-h-[90vh] border-b border-border flex relative items-center justify-center mt-20 p-6 square-bg">
@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center gap-8">
           <img
             alt="Profile Avatar"
-            src="/src/assets/avatar3d.png"
+            src={avatar}
             className="w-50 rounded-full"
           />
           <div>
