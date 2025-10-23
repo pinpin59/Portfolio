@@ -10,7 +10,7 @@ import { ModeToggle } from "../ModeToggle";
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [currentPath, setCurrentPath] = useState("");
-
+  const email = "kevinpintar59160@gmail.com";
   useEffect(() => {
     setCurrentPath(window.location.pathname);
 
@@ -89,7 +89,7 @@ const Navbar: React.FC = () => {
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
                     <a
-                      href="#contact"
+                      href={`mailto:${email}`}
                       className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 font-medium px-3 py-2 rounded-md hover:bg-gray-100/50 dark:hover:bg-gray-800/50"
                     >
                       Contact

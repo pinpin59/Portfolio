@@ -7,38 +7,40 @@ import { Code, Wrench, Lightbulb } from "lucide-react";
 const Skills = () => {
   const skills: Skill[] = [
     {
-      title: "Ce que je peux faire",
-      description: "Mes domaines d'expertise et services",
+      title: "What I Do",
+      description: "My expertise and services",
       icon: <Icon className="text-chart-1" icon={Code} size={46} />,
       cardContent: [
         "Full Stack Development",
-        "Applications React & Angular",
-        "APIs REST & GraphQL",
-        "Architecture & BDD",
+        "Javascript Applications",
+        "REST & APIs",
+        "Database Architecture",
         "UI/UX Design",
-        "Optimisation performance",
+        "Performance Optimization",
       ],
     },
     {
-      title: "Mes outils",
-      description: "Technologies que j'utilise",
+      title: "My Tools",
+      description: "Technologies I use",
       icon: <Icon className="text-chart-1" icon={Wrench} size={46} />,
       cardContent: [
         "React, Angular, TypeScript",
         "Node.js, Express, NestJS",
         "PostgreSQL, MongoDB",
         "Git, Docker, VS Code",
-        "Vercel, Netlify, AWS",
       ],
     },
     {
-      title: "Innovation",
-      description: "À corriger plus tard",
+      title: "My Approach",
+      description: "How I work & deliver value",
       icon: <Icon className="text-chart-1" icon={Lightbulb} size={46} />,
       cardContent: [
-        "Contenu à définir",
-        "En cours de réflexion",
-        "Prochainement mis à jour",
+        "Clean Code & Best Practices",
+        "Agile & Collaborative",
+        "User-Centered Design",
+        "Continuous Learning",
+        "Problem-Solving Mindset",
+        "Scalable Solutions",
       ],
     },
   ];
@@ -50,12 +52,11 @@ const Skills = () => {
   return (
     <section className="p-4 sm:p-10 md:p-20 mt-20">
       <h2 className="text-3xl md:text-4xl font-bold mb-6">
-        Création de projets et d'idées
+        Building Projects & Ideas
       </h2>
       <p className="text-lg md:text-xl text-muted-foreground max-w-4xl leading-relaxed">
-        Je me spécialise dans l'architecture scalable et l'expérience
-        utilisateur, en concevant des applications de qualité qui répondent aux
-        besoins réels des utilisateurs et des entreprises.
+        I specialize in scalable architecture and user experience, designing
+        quality applications that meet real needs of users and businesses.
       </p>
       <div className="mt-20">
         <SkillCardGrid skills={skills} />
