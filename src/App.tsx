@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <BrowserRouter basename="/Portfolio">
+      <BrowserRouter>
         <Header />
         <main>
           <AppRouter />

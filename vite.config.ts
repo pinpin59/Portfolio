@@ -5,19 +5,8 @@ import path from "path";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  base: "/Portfolio/",
-  plugins: [
-    react(),
-    tailwindcss(),
-    {
-      name: "spa-fallback",
-      generateBundle(_, bundle) {
-        if (bundle["index.html"]) {
-          bundle["404.html"] = { ...bundle["index.html"] };
-        }
-      },
-    },
-  ],
+  base: "/",
+  plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
