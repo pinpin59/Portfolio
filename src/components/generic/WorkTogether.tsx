@@ -1,5 +1,5 @@
 import contactme from "@/assets/contactme.svg";
-import { ContactMeButton } from "./ContactMebutton";
+import { ContactMeButton } from "./ContactMeButton";
 
 export const WorkTogether: React.FC = () => {
   return (

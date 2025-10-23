@@ -9,10 +9,10 @@ export const projectsData: Project[] = [
     title: "Portfolio Website",
     description: "Mon site portfolio personnel avec React et TypeScript",
     image: react,
+    images: [react, waves],
     tools: ["React", "TypeScript", "Tailwind CSS", "Vite"],
     fullDescription:
       "Ce portfolio a été créé pour présenter mes projets et compétences en développement web. Il utilise les dernières technologies frontend pour offrir une expérience utilisateur moderne et responsive.",
-    images: [react, waves],
     githubUrl: "https://github.com/votre-username/portfolio",
     liveUrl: "https://votre-portfolio.com",
   },
@@ -22,6 +22,8 @@ export const projectsData: Project[] = [
     title: "E-commerce App",
     description: "Application e-commerce complète avec panier et paiement",
     image: waves,
+    images: [react, waves],
+
     tools: ["Next.js", "Node.js", "MongoDB", "Stripe"],
     fullDescription:
       "Application e-commerce full-stack permettant aux utilisateurs de parcourir des produits, les ajouter au panier et effectuer des achats sécurisés.",

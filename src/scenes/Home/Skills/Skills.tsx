@@ -2,40 +2,43 @@ import { Icon } from "@/components/generic/Icon";
 import SkillCardGrid from "@/scenes/Home/Skills/components/SkillCardGrid";
 import { Button } from "@/components/ui/button";
 import type { Skill } from "@/types/Skill";
-import { Layers } from "lucide-react";
+import { Code, Wrench, Lightbulb } from "lucide-react";
 
 const Skills = () => {
   const skills: Skill[] = [
     {
-      title: "Card 1",
-      description: "This is a placeholder description for card 1.",
-      icon: <Icon icon={Layers} size={46} />,
+      title: "Ce que je peux faire",
+      description: "Mes domaines d'expertise et services",
+      icon: <Icon className="text-chart-1" icon={Code} size={46} />,
       cardContent: [
-        "Placeholder item 1",
-        "Placeholder item 2",
-        "Placeholder item 3",
-        "Placeholder item 4",
+        "Full Stack Development",
+        "Applications React & Angular",
+        "APIs REST & GraphQL",
+        "Architecture & BDD",
+        "UI/UX Design",
+        "Optimisation performance",
       ],
     },
     {
-      title: "Card 2",
-      description: "This is a placeholder description for card 2.",
-      icon: <Icon icon={Layers} size={46} />,
+      title: "Mes outils",
+      description: "Technologies que j'utilise",
+      icon: <Icon className="text-chart-1" icon={Wrench} size={46} />,
       cardContent: [
-        "Placeholder item A",
-        "Placeholder item B",
-        "Placeholder item C",
-        "Placeholder item D",
+        "React, Angular, TypeScript",
+        "Node.js, Express, NestJS",
+        "PostgreSQL, MongoDB",
+        "Git, Docker, VS Code",
+        "Vercel, Netlify, AWS",
       ],
     },
     {
-      title: "Card 3",
-      description: "This is a placeholder description for card 3.",
-      icon: <Icon icon={Layers} size={46} />,
+      title: "Innovation",
+      description: "À corriger plus tard",
+      icon: <Icon className="text-chart-1" icon={Lightbulb} size={46} />,
       cardContent: [
-        "Placeholder content X",
-        "Placeholder content Y",
-        "Placeholder content Z",
+        "Contenu à définir",
+        "En cours de réflexion",
+        "Prochainement mis à jour",
       ],
     },
   ];
@@ -46,12 +49,13 @@ const Skills = () => {
 
   return (
     <section className="p-4 sm:p-10 md:p-20 mt-20">
-      <h2>Title Component</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
-        deserunt, nemo dolores saepe laboriosam accusantium aut voluptatibus
-        consectetur, omnis velit nam sed soluta, at eaque? Quas illo aperiam
-        corrupti esse.
+      <h2 className="text-3xl md:text-4xl font-bold mb-6">
+        Création de projets et d'idées
+      </h2>
+      <p className="text-lg md:text-xl text-muted-foreground max-w-4xl leading-relaxed">
+        Je me spécialise dans l'architecture scalable et l'expérience
+        utilisateur, en concevant des applications de qualité qui répondent aux
+        besoins réels des utilisateurs et des entreprises.
       </p>
       <div className="mt-20">
         <SkillCardGrid skills={skills} />

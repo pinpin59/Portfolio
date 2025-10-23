@@ -25,7 +25,9 @@ const ContactForm = () => {
           />
         </Field>
         <Field orientation="horizontal">
-          <Button type="submit">Submit</Button>
+          <Button variant={"outline"} type="submit">
+            Submit
+          </Button>
         </Field>
       </FieldGroup>
     </form>
