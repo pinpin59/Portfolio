@@ -5,6 +5,3 @@ Allow: /
 Disallow: /api/
 Disallow: /_next/
 Disallow: /assets/
-
-Sitemap: portfolio-rosy-chi-bcblaas5an.vercel.app
-
