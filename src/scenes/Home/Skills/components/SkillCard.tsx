@@ -18,7 +18,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill }: SkillCardProps) => {
       <CardHeader>
         <div className="flex items-center space-x-5">
           <CardTitle>{skill.icon}</CardTitle>
-          <CardTitle className="text-2xl text-foreground">
+          <CardTitle className="text-2xl text-secondary-foreground/90">
             {skill.title}
           </CardTitle>
         </div>
