@@ -2,7 +2,7 @@ import { ContactMeButton } from "@/components/generic/ContactMeButton";
 import { Icon } from "@/components/generic/Icon";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, View } from "lucide-react";
-import avatar from "@/assets/avatar3d.png";
+import avatar from "@/assets/avatar3d.webp";
 const Hero = () => {
   return (
     <section className="min-h-[90vh] border-b border-border flex relative items-center justify-center mt-20 p-6 square-bg">
