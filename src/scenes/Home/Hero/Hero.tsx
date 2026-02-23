@@ -13,7 +13,9 @@ const Hero = () => {
           <img
             alt="Profile Avatar"
             src={avatar}
-            className="w-50 rounded-full"
+            width={200}
+            height={274}
+            className="rounded-full"
           />
           <div>
             <p className="text-4xl md:text-6xl font-bold">
